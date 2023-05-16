@@ -1,6 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@unocss/nuxt", '@pinia/nuxt'],
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "layout", mode: "out-in" },
+    head: {
+      title: "mooc.mobiedu.vn",
+      script: [
+        {
+          src: "https://www.youtube.com/player_api",
+        },
+      ],
+    },
+  },
+  modules: ["@unocss/nuxt", '@pinia/nuxt',"@nuxt/devtools","@vueuse/nuxt",'nuxt-icon'],
   pinia: {
     autoImports: [
       ['defineStore', 'acceptHMRUpdate'], // import { defineStore as definePiniaStore } from 'pinia'
