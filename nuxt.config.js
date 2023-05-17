@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@unocss/nuxt", '@pinia/nuxt',"@nuxt/devtools","@vueuse/nuxt",'nuxt-icon'],
+  modules: ["@unocss/nuxt", '@pinia/nuxt',"@nuxt/devtools","@vueuse/nuxt",'nuxt-icon','@element-plus/nuxt'],
   pinia: {
     autoImports: [
       ['defineStore', 'acceptHMRUpdate'], // import { defineStore as definePiniaStore } from 'pinia'
