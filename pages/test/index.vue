@@ -1,7 +1,8 @@
 <template>
   <div>
+    <div style="font-family: 'Pacifico';">wh</div>
+    <!-- class="font-pacifico"  -->
     <div class="text-center p-4" ref="el" style="color: var(--color); font-size: var(--font_size); font-style:var(--font_style); font-weight:var(--font_weight)">Sample text</div>
-
     <div class="grid grid-cols-5 gap-10">
       <div>
         <div>Pick color:{{ color }}</div>
